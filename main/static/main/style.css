@@ -90,6 +90,13 @@ hr.light {
   scroll-behavior: smooth;
 }
 
+.center {
+  text-align: center;
+}
+.ul-center li {
+  text-align: center;
+  list-style: inside;
+}
 
 /*---Media Queries --*/
 @media (max-width: 992px) {
