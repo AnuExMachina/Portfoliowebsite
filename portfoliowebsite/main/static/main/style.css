@@ -46,7 +46,7 @@ body {
   font-size: 200%;
   font-weight: 500;
   text-shadow: 1px 1px 10px #000;
-  padding-botton: 1rem;
+  padding-bottom: 1rem;
 }
 .btn-primary {
   background-color: #6648b1;
@@ -96,6 +96,10 @@ hr.light {
 .ul-center li {
   text-align: center;
   list-style: inside;
+}
+#titan-disc {
+  padding-left: 300px;
+  padding-right: 300px;
 }
 
 /*---Media Queries --*/

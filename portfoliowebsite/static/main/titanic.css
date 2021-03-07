@@ -28,61 +28,6 @@ body {
 .nav-link {
   font-size: 1.1em impo !important;
 }
-.carousel-inner img {
-  width: 100%;
-  height: 100%;
-}
-.carousel-caption {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.carousel-caption h1 {
-  font-size:500%;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 10px #000;
-}
-.carousel-caption h3 {
-  font-size: 200%;
-  font-weight: 500;
-  text-shadow: 1px 1px 10px #000;
-  padding-bottom: 1rem;
-}
-.btn-primary {
-  background-color: #6648b1;
-  border: 1px solid #6648b1;
-}
-.btn-primary:hover {
-  background-color: #563d7c;
-  border: 1px solid #563d7c;
-}
-.jumbotron {
-  padding-top:100px;
-  border-radius: 0;
-}
-
-.about {
-  padding-top:100px;
-  border-radius: 0;
-}
-.skills {
-  padding-top:100px;
-  border-radius: 0;
-}
-
-footer {
-  background-color: #3f3f3f;
-  color: #d5d5d5;
-  padding-top: 2rem;
-}
-hr.light {
-  border-top: 1px solid #d5d5d5;
-  width: 75%;
-  margin-top: .8rem;
-  margin-bottom: 1rem; 
-}
-
-
 .smooth-scroll-container {
   width: 100%;
   height: 100%;
@@ -90,20 +35,16 @@ hr.light {
   scroll-behavior: smooth;
 }
 
-.center {
-  text-align: center;
-}
-.ul-center li {
-  text-align: center;
-  list-style: inside;
-}
-#titan-disc {
-  padding-left: 300px;
-  padding-right: 300px;
+
+
+footer {
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top: 2rem;
 }
 
 /*---Media Queries --*/
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
 
   }
 @media (max-width: 768px) {
@@ -134,23 +75,58 @@ hr.light {
   .carousel-caption h3 {
     font-size: 120%;
     font-weight: 300;
-    padding-botton: .2rem;
+    padding-bottom: .2rem;
   }
   .carousel-caption .btn {
     font-size: 70%;
     padding-top: 2px 5px
   }
+} */
+/* titanic */
+h1 {
+  text-shadow: 2px 2px;
+  text-align: center;
+  font-family: "Papyrus", fantasy;
 }
-
-
+h2, h3, .checkbox {
+  text-align: center;
+  font-family: "Papyrus", fantasy;
+}
+.Pclass {
+  padding-top: 120px;
+}
+.form-label {
+  text-align: center;
+}
+.slider {
+  padding-left: 150px;
+  padding-right: 150px;
+}
 /*---Firefox Bug Fix --*/
-.carousel-item {
+/* .carousel-item {
   transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease;
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
   
+} */
+#submit-titan {
+  box-shadow: #000;
+  text-align: center;
+}
+.submit-titan {
+  padding-top: 40px;
+  text-align: center;
+  font-family: "Papyrus", fantasy;
+  background-color: rgb(87, 65, 94);
+}
+.card-body {
+  background-color: #222;
+}
+#text {
+  text-align: center;
+  font-family: "Papyrus", fantasy;
 }
 /*--- Fixed Background Image --*/
 figure {

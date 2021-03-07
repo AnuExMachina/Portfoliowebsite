@@ -1,0 +1,372 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Titanic</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="{% static 'main/titanic.css' %}" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="https://m.w3newbie.com/you-tube.css"> -->
+
+
+
+    <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css"
+rel="stylesheet"
+/>
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<!-- MDB icon -->
+<!-- <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" /> -->
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+<!-- Google Fonts Roboto -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+/>
+<!-- MDB -->
+<!-- <link rel="stylesheet" href="css/mdb.min.css" /> -->
+
+
+</head>
+<body>
+<!-- Navigation -->
+    <nav class="navbar navbar-expand-xl navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="{% static 'main/logo.png' %}" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#me">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About this site</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">My projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">My skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#connect">Let's get in touch!</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!--- Titanic -->
+    <!-- Pclass -->
+    <form id="form-titan">
+        <div class="Pclass">
+        <h1>Pclass</h1>
+        <h2>-choose which class you usually travel</h2>
+            <div class="checkbox">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Pclass" id="Pclass1" value="1">
+                    <label class="form-check-label" for="inlineRadio1">First class</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Pclass" id="Pclass2" value="2">
+                    <label class="form-check-label" for="inlineRadio2">Second class</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Pclass" id="Pclass3" value="3">
+                    <label class="form-check-label" for="inlineRadio3">Third class</label>
+                </div>
+            </div>
+            <hr class="light">
+            </div>
+        </div>
+        <!-- Sex -->
+        <div class="Sex">
+            <h1>Gender</h1>
+            <h2>input your gender</h2>
+            <div class="checkbox">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Sex" id="Sex1" value="male"> 
+                    <!-- for przypisac id tego buttona, zeby klikac na teskt i sie zaznaczalo -->
+                    <label class="form-check-label" for="inlineRadio4">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Sex" id="Sex2" value="female">
+                    <label class="form-check-label" for="inlineRadio5">Female</label>
+                </div>
+            <hr class="light">
+            </div>
+        </div>
+        <!-- Age -->
+        <!-- 1-80 -->
+        <div class="Age">
+            <h1>Age</h1>
+            <h2>-select your age</h2>
+            <div class="slider">
+                <label class="form-label" for="Age"></label>
+                <div class="range">
+                    <input type="range" class="form-range" min="1" max="80" id="Age" />
+                </div>
+            </div>
+            <hr class="light">
+        </div>
+        <!-- Siblings -->
+        <!-- 0-8 -->
+        <div class="Siblings">
+        <h1>Siblings</h1>
+        <h2>-type in how much siblings do you have</h2>
+            <div class="checkbox">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Siblings" id="Siblings0" value="0">
+                    <label class="form-check-label" for="inlineRadio4">0</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Siblings" id="Siblings1" value="1">
+                    <label class="form-check-label" for="inlineRadio4">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Siblings" id="Siblings2" value="2">
+                    <label class="form-check-label" for="inlineRadio4">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Siblings" id="Siblings3" value="3">
+                    <label class="form-check-label" for="inlineRadio4">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Siblings" id="Siblings4" value="4">
+                    <label class="form-check-label" for="inlineRadio4">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Siblings" id="Siblings5" value="5">
+                    <label class="form-check-label" for="inlineRadio4">5</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Siblings" id="Siblings6" value="6">
+                    <label class="form-check-label" for="inlineRadio4">6</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Siblings" id="Siblings7" value="7">
+                    <label class="form-check-label" for="inlineRadio4">7</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Siblings" id="Siblings8" value="8">
+                    <label class="form-check-label" for="inlineRadio4">8</label>
+                </div>
+            </div>
+        <hr class="light">
+        </div>
+        <!-- Spouses -->
+        <div class="Spouses">
+        <h1>Spouses</h1>
+        <h2>-input whether you have a partner or not</h2>
+            <div class="checkbox">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Spouses" id="Spouses1" value="1">
+                    <label class="form-check-label" for="inlineRadio4">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Spouses" id="Spouses2" value="0">
+                    <label class="form-check-label" for="inlineRadio5">No</label>
+                </div>
+            </div>
+        <hr class="light">
+        </div>
+        <!-- Parents -->
+            <div class="Parents">
+            <h1>Parents</h1>
+            <h2>-do you have any living parents?</h2>
+            <div class="checkbox">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Parents" id="Parents1" value="2">
+                    <label class="form-check-label" for="inlineRadio4">Yes, both live</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Parents" id="Parents2" value="1">
+                    <label class="form-check-label" for="inlineRadio5">One of them lives</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Parents" id="Parents3" value="0">
+                    <label class="form-check-label" for="inlineRadio5">No, all are dead</label>
+                </div>
+            </div>
+        </div>
+        <hr class="light">
+        <!-- Children -->
+        <!-- 0-6 -->
+        <div class="Children">
+        <h1>Children</h1>
+        <h2>-type in how much children do you have</h2>
+            <div class="checkbox">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Children" id="Children0" value="0">
+                    <label class="form-check-label" for="inlineRadio4">0</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Children" id="Children1" value="1">
+                    <label class="form-check-label" for="inlineRadio4">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Children" id="Children2" value="2">
+                    <label class="form-check-label" for="inlineRadio4">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Children" id="Children3" value="3">
+                    <label class="form-check-label" for="inlineRadio4">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Children" id="Children4" value="4">
+                    <label class="form-check-label" for="inlineRadio4">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Children" id="Children5" value="5">
+                    <label class="form-check-label" for="inlineRadio4">5</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Children" id="Children6" value="6">
+                    <label class="form-check-label" for="inlineRadio4">6</label>
+                </div>
+            </div>
+        </div>
+        <hr class="light">
+        <!-- Fare -->
+        <!-- 0-512.3292 -->
+        <div class="Fare">
+            <h1>Fare</h1>
+            <h2>-type in how much would you be willing to pay for a trip (in £s) </h2>
+            <div class="slider"></label>
+                <div class="range">
+                    <input type="range" class="form-range" min="0" max="512" id="Fare" />
+                </div>
+            </div>
+            <hr class="light">
+        </div>
+    <button type="submit" name="action" id="submit-titan" class="btn btn-secondary btn-lg btn-block"><p class="submit-text">Submit!</p></button>
+</form>
+<div class="card">
+    <div class="card-body">
+        <p id="text">Input correct data</p>
+    </div>
+</div>
+
+<!--- Footer -->
+    <footer>
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img src="{% static 'main/logo-footer.png' %}">
+                    <hr class="light">
+                </div>
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h5>e-mail</h5>
+                    <hr class="light">
+                    <p>michalina.czechowska@gmail.com</p>
+                </div>
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h5>LinkedIn</h5>
+                    <hr class="light">
+                    <p><a href="https://www.linkedin.com/in/michalina-czechowska-a8a8b6177/">LinkedIn</a></p>
+
+                </div>
+                <div class="col-12">
+                    <hr class="light">
+                    <h5>&copy; Michalina Czechowska</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"
+></script>
+<script>
+
+    
+    function getCookie(name) {
+        let cookieValue = null;
+        if (document.cookie && document.cookie !== '') {
+            const cookies = document.cookie.split(';');
+            for (let i = 0; i < cookies.length; i++) {
+                const cookie = cookies[i].trim();
+                // Does this cookie string begin with the name we want?
+                if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
+                }
+            }
+        }
+        return cookieValue;
+    }
+    const csrftoken = getCookie('csrftoken');
+    // var button = document.getElementById("submit-titan");
+    var form = document.getElementById("form-titan");
+    form.addEventListener("submit", function(e){
+        e.preventDefault();
+        console.log("Form Submitted");
+        var url = "https://michalina-czechowska.pl/api/titanic/";
+        var pclass = document.querySelector('input[name="Pclass"]:checked').value;
+        var sex = document.querySelector('input[name="Sex"]:checked').value;
+        var age = document.getElementById("Age").value;
+        var siblings_spouses = parseInt(document.querySelector('input[name="Siblings"]:checked').value) + parseInt(document.querySelector('input[name="Spouses"]:checked').value);
+        var parents_children = parseInt(document.querySelector('input[name="Parents"]:checked').value) + parseInt(document.querySelector('input[name="Children"]:checked').value);
+        var fare = document.getElementById("Fare").value;
+
+
+        fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-type': 'application/json',
+                'X-CSRFToken': csrftoken,
+            },
+            body:JSON.stringify({
+                "Pclass": pclass,
+                "Sex": sex,
+                "Age": age,
+                "Siblings/Spouses Aboard": siblings_spouses,
+                "Parents/Children Aboard": parents_children,
+                "Fare": fare
+            })
+        }).then(res => res.json())
+        .then((out) => {
+        document.getElementById("text").innerHTML = `
+            <p class="flow-text" style="color:lightgray">
+                You would have: ${out*100}% chance to survive. 
+            </p>
+        `
+        
+
+        // console.log('Output: ', out[0][0]);
+        //     }).then(
+        // document.getElementById("cont_2").style.display = "none").then
+        // (document.getElementById("cont_3").style.display = "inline").then
+    })
+})
+
+</script>
+</body>
+</html>
