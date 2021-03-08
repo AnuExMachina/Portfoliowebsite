@@ -12,3 +12,8 @@ Website is containerized with Docker. Next step is to add CI/CD.
 
 In the future I plan to add all my machine learning models as REST API, so that anyone can try it.
 
+## 8 march
+
+Add Titanic API and a form, where the user can input some data and see the chance to survive if he was on Titanic.
+
+![Titanic Form](./img/titanic.JPG)
